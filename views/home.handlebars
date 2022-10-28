@@ -1,0 +1,22 @@
+<h1>Sua Saúde</h1>
+<p>O melhor para você e sua família!</p>
+<p>O nome do usuário logado é {{user.name}} {{user.surname}}</p>
+{{#if approved}}
+<p>
+    Parabéns, seu cadastro foi aprovado!
+</p>
+{{else}}
+    <p>
+        O seu cadastro precisa de aprovação para acesso total ao sistema
+    </p>
+{{/if}}
+
+
+
+{{#if auth}}
+<p>
+    Você está autenticado, <a href="/dashboard">clique aqui</a> para acessar a área de membros
+</p>
+{{/if}} 
+
+<p>Conheça mais sobre nosso sitema <a href="/blog">Clique aqui</a></p>
